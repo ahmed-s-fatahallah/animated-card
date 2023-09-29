@@ -3,17 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./index.css" />
     <title>animated card</title>
   </head>
   <body>
     <div class="game">
-      <div class="rank">3</div>
+      <div class="rank">1</div>
       <div class="front">
-        <img src="img/cs2.jpg" alt="game photo" />
-        <h3 class="name">Game name</h3>
+        <img src="img/cs2.jpg" alt="game photo" class="thumbnail" />
+        <h3 class="name">Counter Strike 2</h3>
         <div class="stats">
-          <p class="viewers">539.9k</p>
+          <p class="viewers icon">539.9k</p>
           <div class="streamers">
             <img src="img/pexels-photo-2218786.jpeg" alt="person one" />
             <img src="img/pexels-photo-2380794.jpeg" alt="person two" />
@@ -29,21 +36,29 @@
         <button class="btn">See more streams</button>
         <div class="streamers">
           <div class="streamer">
+            <div class="icon">
+              <img src="img/pexels-photo-2218786.jpeg" alt="streamer 1" />
+            </div>
             <p class="name">Gamer 1</p>
             <p class="number">36.1k</p>
           </div>
           <div class="streamer">
+            <div class="icon">
+              <img src="img/pexels-photo-2380794.jpeg" alt="streamer 2" />
+            </div>
             <p class="name">Gamer 2</p>
             <p class="number">35.1k</p>
           </div>
           <div class="streamer">
+            <div class="icon">
+              <img src="img/pexels-photo-2598024.jpeg" alt="streamer 3" />
+            </div>
             <p class="name">Gamer 3</p>
             <p class="number">34.1k</p>
           </div>
         </div>
       </div>
+      <div class="background"></div>
     </div>
-
-    <div class="background"></div>
   </body>
 </html>
