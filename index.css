@@ -99,11 +99,6 @@ img {
     align-items: center;
   }
 
-  .viewers {
-    display: flex;
-    align-items: center;
-  }
-
   .viewers::before {
     content: "\f007";
     color: rgba(255, 255, 255, 0.75);
@@ -244,10 +239,7 @@ img {
       opacity: 0;
       content: "";
       position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
+      inset: 0;
       border-radius: 50%;
     }
 

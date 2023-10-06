@@ -60,7 +60,7 @@ img {
   cursor: pointer;
 }
 
-/* .streamers {
+.streamers {
   display: flex;
   text-align: center;
 
@@ -69,9 +69,9 @@ img {
     height: 2rem;
     border-radius: 50%;
   }
-} */
+}
 
-/* .rank {
+.rank {
   position: absolute;
   top: -1px;
   right: 1rem;
@@ -82,46 +82,41 @@ img {
   padding: 0.5rem 0.5rem 0.75rem;
   clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0 100%, 0 0);
   transition: var(--transition);
-} */
+}
 
 .front {
   transition: 250ms;
-  /* .thumbnail {
+  .thumbnail {
     border-radius: var(--br);
-  } */
-  /* .name {
+  }
+  .name {
     margin-block: 0.75rem;
-  } */
+  }
 
-  /* .stats {
+  .stats {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  } */
+  }
 
-  /* .viewers {
-    display: flex;
-    align-items: center;
-  } */
-
-  /* .viewers::before {
+  .viewers::before {
     content: "\f007";
     color: rgba(255, 255, 255, 0.75);
     font-size: 0.75rem;
     margin-right: 0.5rem;
-  } */
+  }
 
-  /* .streamers img {
+  .streamers img {
     border: 2px solid var(--clr-dark);
 
     &:nth-of-type(1) {
       transform: translateX(50%);
-      z-index: 1;
+      z-index: 1; /****/
     }
     &:nth-of-type(2) {
       transform: translateX(25%);
     }
-  } */
+  }
 }
 
 .back {
@@ -135,6 +130,8 @@ img {
   align-items: center;
   gap: 1.5rem;
   transform: translateY(35%); */
+
+  /****/
 
   /* .streaming-info {
     columns: 2;
@@ -211,26 +208,6 @@ img {
   } */
 }
 
-@keyframes gameName {
-  0% {
-    text-align: left;
-    opacity: 1;
-  }
-  20% {
-    text-align: left;
-    opacity: 0;
-  }
-  50% {
-    text-align: center;
-    opacity: 0;
-    transform: scale(1.2);
-  }
-  100% {
-    text-align: center;
-    opacity: 1;
-  }
-}
-
 .streamer {
   .icon {
     /* display: inline-block;
@@ -244,10 +221,7 @@ img {
       opacity: 0;
       content: "";
       position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
+      inset: 0;
       border-radius: 50%;
     } */
 
@@ -287,7 +261,7 @@ img {
     }
   } */
 }
-.wave {
+/* .wave {
   position: absolute;
   top: 3rem;
   left: 0;
@@ -297,6 +271,26 @@ img {
 }
 .st0 {
   fill: var(--clr-dark);
+} */
+
+@keyframes gameName {
+  0% {
+    text-align: left;
+    opacity: 1;
+  }
+  20% {
+    text-align: left;
+    opacity: 0;
+  }
+  50% {
+    text-align: center;
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    text-align: center;
+    opacity: 1;
+  }
 }
 
 @keyframes wave {
