@@ -36,7 +36,7 @@ img {
 
 .btn {
   cursor: pointer;
-  border: 0;
+  text-decoration: none;
   background: var(--clr-secondary);
   border-radius: 100vw;
   color: var(--clr-light);
@@ -286,6 +286,26 @@ img {
       }
     }
   } */
+}
+.wave {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  width: 200%;
+
+  animation: wave linear 3s infinite;
+}
+.st0 {
+  fill: var(--clr-dark);
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes pulse {
